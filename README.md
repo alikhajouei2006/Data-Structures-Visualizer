@@ -1,7 +1,7 @@
 # Data Structures Visualizer
 
 **Data Structures Visualizer** is an interactive web-based tool designed to help learners understand core data structures such as **Stack**, **Queue**, and **Linked List** visually.  
-The project aims to make abstract concepts tangible by showing dynamic, real-time updates as data is added, removed, or modified.
+The project aims to make abstract concepts tangible by showing dynamic, real-time updates as data is added or removed.
 
 ## Features
 
