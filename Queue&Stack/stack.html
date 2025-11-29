@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Stack & Queue Visualizer</title>
+  <link rel="stylesheet" href="../Queue&Stack/stackl.css" />
+</head>
+<body>
+    <div>
+        <div class="title">
+            <div class="liquidGlass-text">
+                Data Structures
+            </div>
+            <div class="liquidGlass-wrapper dock">
+            <div class="liquidGlass-effect"></div>
+            <div class="liquidGlass-tint"></div>
+            <div class="liquidGlass-shine"></div>
+        </div>
+    </div>
+    <section id="ds-section">
+    <h1 class="titlel">📚 پشته و صف:Data Structures</h1>
+
+    <div class="tabs">
+        <button class="tab-btn active" data-target="stack-panel">پشته (Stack)</button>
+        <button class="tab-btn" data-target="queue-panel">صف (Queue)</button>
+    </div>
+
+    <!-- STACK PANEL -->
+    <div id="stack-panel" class="panel active">
+        <h2>پشته — LIFO</h2>
+
+        <div class="controls">
+        <input id="stack-input" placeholder="مقدار برای push (مثلاً 42)">
+        <button id="stack-push">📥 push</button>
+        <button id="stack-pop">📤 pop</button>
+        <button id="stack-clear">پاک کردن</button>
+        </div>
+
+        <div id="stack-container" class="vertical-visualizer">
+        <!-- گره‌ها به صورت ستونی نمایش داده می‌شوند -->
+        <div class="stack-top-label">Top</div>
+        <div class="stack-canvas"></div>
+        </div>
+
+        <div id="stack-status" class="status"></div>
+    </div>
+
+    <!-- QUEUE PANEL -->
+    <div id="queue-panel" class="panel">
+        <h2>صف — FIFO</h2>
+
+        <div class="controls">
+        <input id="queue-input" placeholder="مقدار برای enqueue (مثلاً hello)">
+        <button id="queue-enq">➕ enqueue</button>
+        <button id="queue-deq">➖ dequeue</button>
+        <button id="queue-clear">پاک کردن</button>
+        </div>
+
+        <div id="queue-container" class="horizontal-visualizer">
+        <div class="queue-canvas"></div>
+        </div>
+
+        <div id="queue-status" class="status"></div>
+    </div>
+    </section>
+
+<script src="../Queue&Stack/stacck.js"></script>
+</body>
+</html>

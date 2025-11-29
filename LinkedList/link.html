@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Linked List Visualizer</title>
+<link rel="stylesheet" href="../LinkedList/linkl.css" />
+</head>
+<body>
+
+<div>
+    <div class="title">
+        <div class="liquidGlass-text">Data Structures</div>
+        <div class="liquidGlass-wrapper dock">
+            <div class="liquidGlass-effect"></div>
+            <div class="liquidGlass-tint"></div>
+            <div class="liquidGlass-shine"></div>
+        </div>
+    </div>
+
+    <section id="ds-section">
+        <h1 class="titlel">📚 لیست پیوندی:Data Structure </h1>
+
+        <div class="tabs">
+            <button class="tab-btn active" data-target="linkedlist-panel">لیست پیوندی</button>
+        </div>
+
+        <div id="linkedlist-panel" class="panel active">
+            <h2>لیست پیوندی — Linked List</h2>
+
+            <div class="controls">
+                <input id="ll-input" placeholder="مقدار برای اضافه کردن">
+                <button id="ll-add-tail">🏠 اضافه به ابتدا</button>
+                <button id="ll-add-head">🏁 اضافه به انتها</button>
+                <button id="ll-remove-tail">❌ حذف ابتدا </button>
+                <button id="ll-remove-head">❌ حذف انتها</button>
+                <button id="ll-clear">پاک کردن</button>
+            </div>
+
+            <div id="ll-container" class="horizontal-visualizer">
+                <div class="ll-canvas"></div>
+            </div>
+
+            <div id="ll-status" class="status"></div>
+        </div>
+    </section>
+</div>
+
+<script src="../LinkedList/linkedlist.js"></script>
+
+</body>
+</html>
